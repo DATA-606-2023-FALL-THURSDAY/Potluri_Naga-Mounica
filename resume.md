@@ -1,5 +1,5 @@
 # NAGA MOUNICA POTLURI
-![Headshot](Photo.jpeg)
+![Headshot](https://github.com/TI29978/UMBC-DATA606-FALL2023-THURSDAY/blob/main/Photo.jpeg)
 ## Education
 
 - **Master's - in Data science --- December 2023** 
