@@ -71,23 +71,27 @@ Here are some significant figures:
 ### 4.3 Data Visualizations
 - To understand the data, we produced a number of visualizations using Plotly and Matplotlib:
 **Plot 1:** Distribution of Customer Ratings
- 
-Figure 6 Distribution of Customer Ratings
+
+ <img width="952" alt="image" src="https://github.com/DATA-606-2023-FALL-THURSDAY/Potluri_NagaMounica/assets/98859616/d9fa6844-0153-41ef-8776-cc1e584cfc21">
+
 
 - The distribution of customer evaluations is shown via a histogram, with the scores being similar for each rating.
 **Plot 2:** Product Cost by Shipment Mode
  
-Figure 7 Box Plot of Product Cost by Shipment Mode
+<img width="952" alt="image" src="https://github.com/DATA-606-2023-FALL-THURSDAY/Potluri_NagaMounica/assets/98859616/8fe0f233-5b67-445a-b912-fcf8439a8f41">
+
 
 - Based on the method of delivery, a boxplot shows the price of the items. It offers information on the spread and median price for each mode of shipment. The Box Plot showed similar statistics for each Shipment Mode.
 **Plot 3:** Customer Rating vs. Customer Care Calls
  
-Figure 8 Scatter plot of Customer Rating vs. Customer Care Calls
+<img width="952" alt="image" src="https://github.com/DATA-606-2023-FALL-THURSDAY/Potluri_NagaMounica/assets/98859616/c9e81bab-c343-4d1f-88af-88b9be663dd9">
+
 
 - The correlation between customer feedback and the volume of customer service calls is represented by a scatter plot. Whether orders arrived on time or not determines the colour of the points.
 **Plot 4:** Count Plot, Reached on Time (Target Variable)
  
-Figure 9 Count Plot of Reached On Time or Not
+<img width="520" alt="image" src="https://github.com/DATA-606-2023-FALL-THURSDAY/Potluri_NagaMounica/assets/98859616/fd42a25e-20a1-4c70-8ef9-08e819d7efe6">
+
 
 - A count plot shows the distribution of the target variable "Reached.on.Time_Y.N." It indicates the number of orders that reached on time (1) and those that did not (0).
 
