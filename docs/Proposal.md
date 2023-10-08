@@ -8,7 +8,7 @@
 - Link to your PowerPoint presentation file
 - Link to your  YouTube video 
     
-## 1. Background
+## 2. Background
 
 The e-commerce business has had a remarkable development in the modern environment of globalised trade and digital connection. Due to this transition, prompt and effective product distribution has become of utmost importance. For e-commerce businesses, the ability to forecast with a high degree of accuracy whether a product will be delivered on time is becoming increasingly crucial. With the help of this predictive capability, businesses can make better judgements, streamline their logistical processes, and better satisfy client needs.
 
@@ -19,7 +19,7 @@ This study intends to investigate the following essential concerns in light of t
 2.	What complex elements affect the timely delivery of goods, and how can this nuanced knowledge be applied to improve and optimise the delivery procedures?
 
 We want to uncover practical insights by probing these crucial issues in order to help e-commerce companies streamline their processes, reduce delivery delays, and, ultimately, exceed customers' expectations.
-## 2. Data 
+## 3. Data 
 
 Data Sources: The dataset is obtained from Kaggle and is related to an international e-commerce company's shipping data.
 
@@ -49,3 +49,47 @@ The "Reached.on.Time_Y.N" variable, which denotes whether the product arrived on
 
 ### Potential Features/Predictors:
 All columns except the target variable may have potential to be utilised as feature columns in machine learning models. The following are listed: ID, Warehouse_block, Mode of Shipping, Customer Care Calls, Customer Rating, Cost of the Product, Prior Purchases, Product Importance, Gender, Discount Offered, and Weight in Gms.
+
+
+## 4. Exploratory Data Analysis
+On the dataset, performed an exploratory data analysis (EDA), omitting all other columns and concentrating on the target variable "Reached.on.Time_Y.N" and chosen characteristics. The following are the main conclusions and actions taken during the EDA:
+
+### 4.1 Data Summary Statistics
+For each of the dataset's numerical columns, we computed summary statistics. 
+Here are some significant figures:
+1.	Customer_care_calls: Mean of 4.05, with a minimum of 2 and a maximum of 7.
+2.	Customer_rating: Mean of 2.99, with a minimum of 1 and a maximum of 5.
+3.	Cost_of_the_Product: Mean cost of 210.20, ranging from 96 to 310.
+4.	Prior_purchases: Mean of 3.57, with values between 2 and 10.
+5.	Discount_offered: Mean discount of 13.37%, ranging from 1% to 65%.
+6.	Weight_in_gms: Mean weight of 3634.02 grams, with weights ranging from 1001 to 7846 grams.
+
+### 4.2 Data Cleansing
+**4.2.1 Missing Values**: The dataset contains no missing values; all columns include non-null items.
+
+**4.2.2 Duplicate Rows**: The dataset contains no duplicate rows.
+### 4.3 Data Visualizations
+- To understand the data, we produced a number of visualizations using Plotly and Matplotlib:
+**Plot 1:** Distribution of Customer Ratings
+ 
+Figure 6 Distribution of Customer Ratings
+
+- The distribution of customer evaluations is shown via a histogram, with the scores being similar for each rating.
+**Plot 2:** Product Cost by Shipment Mode
+ 
+Figure 7 Box Plot of Product Cost by Shipment Mode
+
+- Based on the method of delivery, a boxplot shows the price of the items. It offers information on the spread and median price for each mode of shipment. The Box Plot showed similar statistics for each Shipment Mode.
+**Plot 3:** Customer Rating vs. Customer Care Calls
+ 
+Figure 8 Scatter plot of Customer Rating vs. Customer Care Calls
+
+- The correlation between customer feedback and the volume of customer service calls is represented by a scatter plot. Whether orders arrived on time or not determines the colour of the points.
+**Plot 4:** Count Plot, Reached on Time (Target Variable)
+ 
+Figure 9 Count Plot of Reached On Time or Not
+
+- A count plot shows the distribution of the target variable "Reached.on.Time_Y.N." It indicates the number of orders that reached on time (1) and those that did not (0).
+
+### 4.4 Data Tidiness
+Given that each row reflects a distinct order and each column a distinctive quality or attribute of that order, the resultant dataset is thought to be tidy. The information is organized and prepared for additional analysis or machine learning operations.
