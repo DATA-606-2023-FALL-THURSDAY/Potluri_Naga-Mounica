@@ -45,14 +45,14 @@ Here's a breakdown of the columns in the dataset:
 12.	Reached.on.Time_Y.N: Target variable, where 1 indicates that the product has NOT reached on time, and 0 indicates it has reached on time (Binary classification).
 
 ### Target Variable/Label:
-The "Reached.on.Time_Y.N" variable, which denotes whether the product arrived on time or not, is the target variable for the machine learning models. It has the binary values of 1 (Not on time) and 0 (On time), and it is a variable.
+- The "Reached.on.Time_Y.N" variable, which denotes whether the product arrived on time or not, is the target variable for the machine learning models. It has the binary values of 1 (Not on time) and 0 (On time), and it is a variable.
 
 ### Potential Features/Predictors:
-All columns except the target variable may have potential to be utilised as feature columns in machine learning models. The following are listed: ID, Warehouse_block, Mode of Shipping, Customer Care Calls, Customer Rating, Cost of the Product, Prior Purchases, Product Importance, Gender, Discount Offered, and Weight in Gms.
+- All columns except the target variable may have potential to be utilised as feature columns in machine learning models. The following are listed: ID, Warehouse_block, Mode of Shipping, Customer Care Calls, Customer Rating, Cost of the Product, Prior Purchases, Product Importance, Gender, Discount Offered, and Weight in Gms.
 
 
 ## 4. Exploratory Data Analysis
-On the dataset, performed an exploratory data analysis (EDA), omitting all other columns and concentrating on the target variable "Reached.on.Time_Y.N" and chosen characteristics. The following are the main conclusions and actions taken during the EDA:
+- On the dataset, performed an exploratory data analysis (EDA), omitting all other columns and concentrating on the target variable "Reached.on.Time_Y.N" and chosen characteristics. The following are the main conclusions and actions taken during the EDA:
 
 ### 4.1 Data Summary Statistics
 For each of the dataset's numerical columns, we computed summary statistics. 
