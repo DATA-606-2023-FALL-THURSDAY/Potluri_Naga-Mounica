@@ -155,7 +155,8 @@ We employed the following assessment indicators to gauge and compare the models'
 ## 5.4 Result and Interpretations
 ### 1. Logistic Regression:
  
-Figure 10 Linear Regression Result
+![image](https://github.com/DATA-606-2023-FALL-THURSDAY/Potluri_NagaMounica/assets/98859616/ac234e3e-c4ff-4cc4-8856-7d5f430f30b2)
+
 
 - Accuracy: 64.45%
 - True Positives (TP): 913 - The model correctly predicted that 913 shipments would reach on time.
@@ -166,7 +167,8 @@ Interpretation: The logistic regression model was 64.45% accurate, meaning that 
 
 ### 2. Random Forest Classifier:
  
-Figure 11 Random Forest Result
+![image](https://github.com/DATA-606-2023-FALL-THURSDAY/Potluri_NagaMounica/assets/98859616/b78ac4c1-eace-4987-80e6-53eb8f3ebddd)
+
 
 - Accuracy: 65.95%
 - True Positives (TP): 817 - The model correctly predicted that 817 shipments would reach on time.
@@ -177,7 +179,7 @@ Interpretation: With an accuracy of 65.95%, the random forest classifier perform
 
 ### 3. Gradient Boosting Classifier:
 
-Figure 12 Gradient Boosting Result
+![image](https://github.com/DATA-606-2023-FALL-THURSDAY/Potluri_NagaMounica/assets/98859616/a0c2eac1-a6a7-4f7d-ac21-d5820d3c2a6e)
 
 - Accuracy: 68.73%
 - True Positives (TP): 733 - The model correctly predicted that 733 shipments would reach on time.
@@ -185,3 +187,97 @@ Figure 12 Gradient Boosting Result
 - False Positives (FP): 116 - The model incorrectly predicted that 116 shipments would reach on time when they didn't.
 - False Negatives (FN): 572 - The model incorrectly predicted that 572 shipments would not reach on time when they did.
 Interpretation: An even greater level of accuracy—68.73%—was obtained using the gradient boosting classifier. Both logistic regression and random forest underperformed compared to an ensemble model, which creates trees in a sequential manner to rectify faults in the prior trees. However, more research is necessary.
+
+## 5.5 Feature Importance
+In this section, we plotted Top 10 Important Features for Each Model. This Section gives us information of which and How Much a Feature in Important in Model Training.
+1. Random Forest:
+
+![image](https://github.com/DATA-606-2023-FALL-THURSDAY/Potluri_NagaMounica/assets/98859616/32810a05-cd31-42e7-8046-1dbb3a96ade3)
+
+2. Gradient Boosting:
+ 
+![image](https://github.com/DATA-606-2023-FALL-THURSDAY/Potluri_NagaMounica/assets/98859616/67eca764-cc0c-48c5-9d9b-72e746ec9d7f)
+
+3. Random Forest (After Hypertuning):
+ 
+![image](https://github.com/DATA-606-2023-FALL-THURSDAY/Potluri_NagaMounica/assets/98859616/9ebaa8a5-48a9-402c-8653-9e3a4596d8e3)
+
+4. Gradient Boosting(After Hyper Tuning):
+ 
+![image](https://github.com/DATA-606-2023-FALL-THURSDAY/Potluri_NagaMounica/assets/98859616/cb5bb228-3db3-4f20-bcf0-59bdbd7ab0a0)
+
+5. XGBoost (Hypertuned):
+ 
+![image](https://github.com/DATA-606-2023-FALL-THURSDAY/Potluri_NagaMounica/assets/98859616/63eb736a-ed85-4e0d-9b13-fc84f246f49a)
+
+
+## 6. Application of Trained Model
+We have created a user-friendly web application using the Flask framework to make the predictive capability of our trained machine learning models available to a wider audience. With the help of this online application, consumers may interact with our algorithms and get immediate predictions about whether a product will arrive on time or not. We choose Flask because of its clarity, adaptability, and simplicity in integrating with our machine learning algorithms.
+You can read a quick description of the online application and how it allows users to exploit our models' predictive power below:
+### 6.1 Web Application Overview
+Our online application offers consumers a simple and clear interface to enter pertinent cargo information. The application uses our trained models to produce predictions when the user enters the necessary information. Users are informed right away if a product delivery is anticipated to be on time or delayed.
+
+### 6.2 Features of the Web Application
+1.	Input Fields: Users may add a variety of shipping-related information, such as warehouse block, mode of shipment, customer service calls, customer rating, cost of the goods, previous purchases, significance of the product, gender, discount provided, and weight in grammes.
+2.	Predictive Power: Our machine learning models, such as XGBoost, are implemented in the background. These models have been accuracy-tuned after being trained on large datasets.
+3.	User-Friendly Feedback: Users receive simple response after making their opinion, including whether the delivery is anticipated to arrive on time or be delayed.
+4.	Accessibility: Our web application is made to be accessed from several platforms and on different devices, making it easy for users to access on desktop and mobile platforms.
+
+### 6.3 How to Use the Web Application
+Using the application is a straightforward process:
+1.	You may use your favourite web browser to access the web app.
+2.	Fill up the entry blanks with the necessary cargo information.
+3.	To start the delivery prediction procedure, click the "Predict Delivery" button.
+4.	Observe the forecast result that is shown on the screen.
+
+### 6.4 Why Flask
+Since Flask is a quick and effective development framework, we used it for our application. Anyone interested in forecasting delivery outcomes may readily access our trained machine learning models because to Flask's ability to incorporate them into a web-based interface. Grinberg (2018)
+### 6.5 Screenshots
+
+![image](https://github.com/DATA-606-2023-FALL-THURSDAY/Potluri_NagaMounica/assets/98859616/ddbce044-7284-40fe-a5bb-96f1c4cd25c6)
+
+![image](https://github.com/DATA-606-2023-FALL-THURSDAY/Potluri_NagaMounica/assets/98859616/54f8d0b4-154e-479e-815c-2fd69e4c56d1)
+
+# 7. Conclusion
+Through the use of predictive modelling, we set out on a mission in this project to improve on-time delivery estimates in the e-commerce industry. We have created, trained, and successfully used machine learning models that can forecast whether a product will arrive on time or not. Our research has enormous promise for the supply chain management and e-commerce sectors, providing insightful information and foresight tools to enhance user experience and operational effectiveness.
+## 7.1 Summary of Our Work and Its Potential Application
+Our research attempted to overcome significant problems with on-time delivery in the e-commerce industry. We performed exploratory data analysis using a dataset from a global e-commerce firm, preprocessed the data, and trained machine learning models including Logistic Regression, Random Forest, Gradient Boosting, and XGBoost. To attain the best accuracy, we further fined-tune these models (Kotsiantis et al. (2007), Pedregosa et al. (2011), Raschka (2015), García et al. (2016)).
+## 7.2 Usage of Our Research
+Our research has several possible uses:
+1.	Operational Efficiency: Our models may be used by e-commerce businesses to streamline their delivery procedures, cut down on delays, and better manage resources.
+2.	Customer Satisfaction: On time delivery boost client loyalty and happiness, which enhances the reputation of the company.
+3.	Inventory Management: Predictive analytics may help with more effective inventory management, lowering expenses related to excess or inadequate stock.
+4.	Decision Support: Our models may assist logistics managers in making data-driven choices by acting as decision support tools.
+
+## 7.3 Limitations of Our Work
+Despite the encouraging outcomes, our project has certain drawbacks:
+1.	Dataset Size: Because the training dataset was so limited, the models' capacity to generalise to bigger and more varied datasets may be constrained.
+2.	Feature Engineering: Model performance may be improved by using more complex feature engineering approaches.
+3.	External Factors: Our models do not take into consideration outside variables that may affect delivery timeframes, such as the state of the weather or traffic.
+
+## 7.4 Lessons Learned
+During the course of this study, we discovered numerous things:
+1.	Data Preprocessing: It is impossible to overestimate the significance of data preparation, which includes feature scaling and encoding categorical variables.
+2.	Model Selection: Performance is greatly influenced by the careful selection of models and their hyperparameters.
+3.	Interpretability: The interpretation and justification of model predictions to stakeholders is crucial for model adoption.
+
+## 7.5 Future Research Directions
+Our research establishes the framework for further study in the area of logistics and e-commerce:
+1.	Integration of External Data: To improve forecast accuracy, future research might investigate the integration of external data sources including weather and traffic data.
+2.	Real-Time Predictions: Constructing real-time prediction systems that take dynamic shifts in supply chain variables into consideration.
+3.	Customer Behavior Analysis: To better understand how customer interactions affect delivery times, data on consumer behaviour will be analysed.
+4.	Advanced Forecasting: Applying sophisticated time series forecasting techniques to make more precise delivery time predictions.
+Our approach is a huge step in the right direction for e-commerce on-time delivery forecasts. There is a lot more opportunity for study and innovation in this field, even if our models provide useful insights and prediction powers. We may contribute to the continued development of supply chain management and e-commerce practises by iteratively improving our models and investigating new research directions.
+
+# 8. References
+- 1. Ballestar, M. T., Grau-Carles, P., & Sainz, J. (2019). Predicting customer quality in e-commerce social networks: a machine learning approach. Review of Managerial Science, 13, 589-603.
+- 2. Gupta, M. K., Goel, M., Kumar, S., & Rawat, N. (2021). Multi-vendor ecommerce website. International Research Journal of Modernization in Engineering Technology and Science, 3(3), 142-147.
+- 3. Iyer, K. N., Germain, R., & Frankwick, G. L. (2004). Supply chain B2B e‐commerce and time‐based delivery performance. International Journal of Physical Distribution & Logistics Management, 34(8), 645-661.
+- 4. Lolla, R., Harper, M., Lunn, J., Mustafina, J., Assi, J., Loy, C. K., & Al-Jumeily OBE, D. (2022, December). Machine Learning Techniques for Predicting Risks of Late Delivery. In The International Conference on Data Science and Emerging Technologies (pp. 343-356). Singapore: Springer Nature Singapore.
+- 5. Issaoui, Y., Khiat, A., Haricha, K., Bahnasse, A., & Ouajji, H. (2022). An advanced system to enhance and optimize delivery operations in a smart logistics environment. IEEE Access, 10, 6175-6193.
+- 6. Grinberg, M. (2018). Flask web development: developing web applications with python. " O'Reilly Media, Inc.".
+- 7. Kotsiantis, S. B., Zaharakis, I., & Pintelas, P. (2007). Supervised machine learning: A review of classification techniques. Emerging artificial intelligence applications in computer engineering, 160(1), 3-24.
+- 8. Raschka, S. (2015). Python machine learning. Packt publishing ltd.
+- 9. Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel, O., ... & Duchesnay, É. (2011). Scikit-learn: Machine learning in Python. the Journal of machine Learning research, 12, 2825-2830.
+- 10. García, S., Ramírez-Gallego, S., Luengo, J., Benítez, J. M., & Herrera, F. (2016). Big data preprocessing: methods and prospects. Big Data Analytics, 1(1), 1-22.
+
