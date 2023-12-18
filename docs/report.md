@@ -5,8 +5,8 @@
 - GitHub: [https://github.com/TI29978/UMBC-DATA606-FALL2023-THURSDAY], [https://github.com/DATA-606-2023-FALL-THURSDAY/Potluri_NagaMounica]
 - LinkedIn: https://www.linkedin.com/in/mounica-potluri-3576b928b/
 - Code: https://github.com/TI29978/Enhancing-On-Time-Delivery-Predictions-in-E-Commerce/blob/519548aacc2c7ed34c4066107efd30f9ca01a3e3/Mounica%20606%20project.ipynb
-- Link to your PowerPoint presentation file
-- Link to your  YouTube video 
+- PowerPoint presentation file link: https://github.com/DATA-606-2023-FALL-THURSDAY/Potluri_NagaMounica/blob/main/docs/Capston%20Project%20on%20Ecommerce%20on%20Time%20Delivery%20Prediction.pptx
+- YouTube video link: https://youtu.be/szQ5YeE4IHA
     
 ## 2. Background
 
