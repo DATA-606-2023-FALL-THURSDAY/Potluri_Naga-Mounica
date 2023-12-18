@@ -6,7 +6,7 @@
 - LinkedIn: https://www.linkedin.com/in/mounica-potluri-3576b928b/
 - Code: https://github.com/TI29978/Enhancing-On-Time-Delivery-Predictions-in-E-Commerce/blob/519548aacc2c7ed34c4066107efd30f9ca01a3e3/Mounica%20606%20project.ipynb
 - PowerPoint presentation file link: https://github.com/DATA-606-2023-FALL-THURSDAY/Potluri_NagaMounica/blob/main/docs/Capston%20Project%20on%20Ecommerce%20on%20Time%20Delivery%20Prediction.pptx
-- YouTube video link: https://youtu.be/szQ5YeE4IHA
+- YouTube video link: https://youtu.be/WSBhR_GHe6s
     
 ## 2. Background
 
